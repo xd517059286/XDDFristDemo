@@ -1,0 +1,21 @@
+:root { /*定义全局公共颜色，可在vue中直接引用，引用方法 var(--color-promary) In your CSS*/
+  --main-primary: #5c6ac4;
+  --main-secondary: #ecc94b;
+}
+.btn {
+  width: 120px;
+  @apply px-4 py-1 rounded font-semibold bg-gray-200 text-black;
+  &:hover{
+    @apply bg-main-colour text-white;
+  }
+  span{
+    color: var(--main-primary);
+  }
+  font-size: 1px;
+}
+a {
+  @apply text-blue-600 underline;
+}
+.border{
+  border:1px solid var(--main-primary)
+}
